@@ -11,4 +11,4 @@ ZSH_THEME="apple"
 plugins=(osx git)
 
 source $ZSH/oh-my-zsh.sh
-source aliases
+source aliases.zsh
