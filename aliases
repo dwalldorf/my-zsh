@@ -1,0 +1,4 @@
+# aliases
+alias ll='ls -al'
+alias grep='grep --color=auto'
+alias df='df -h'
