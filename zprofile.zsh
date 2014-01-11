@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh configuration.
 export M3_HOME=/Applications/apache-maven-3.0.5/bin/mvn
-export PATH=$HOME/bin:/usr/local/bin:$M3_HOME:$PATH
+export PATH=$HOME/bin:$HOME/.my-zsh/bin:/usr/local/bin:$M3_HOME:$PATH
 
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="apple"
