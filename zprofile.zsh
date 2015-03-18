@@ -9,7 +9,7 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/current/Contents/Home/"
 export PATH=$HOME/bin:$HOME/.my-zsh/bin:/usr/local/bin:$M3_HOME:$M3:$JAVA_HOME:$PATH:$GRADLE_HOME/bin
 
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="apple"
+ZSH_THEME="linuxonly"
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
