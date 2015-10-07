@@ -4,7 +4,7 @@ export GRADLE_HOME="/usr/bin/gradle/current"
 export M3_HOME="/Applications/apache-maven-3.0.5/"
 export M3=$M3_HOME/bin
 export M2_HOME=""
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/current/Contents/Home/"
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 export PATH=$HOME/bin:$HOME/.my-zsh/bin:/usr/local/bin:$M3_HOME:$M3:$JAVA_HOME:$PATH:$GRADLE_HOME/bin
 
