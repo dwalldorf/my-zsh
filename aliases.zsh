@@ -2,6 +2,11 @@
 alias ll='ls -al'
 alias df='df -h'
 
+# screen
+alias s='screen'
+alias sl='screen -list'
+alias sr='screen -r'
+
 # git stuff
 alias gd='git diff --color'
 alias gdc='git diff --cached --color'
