@@ -15,6 +15,7 @@ ZSH_THEME="apple"
 # DISABLE_AUTO_TITLE="true"
 
 plugins=(osx git)
+DISABLE_AUTO_TITLE="true"
 
 source $ZSH/oh-my-zsh.sh
 source ~/.my-zsh/aliases.zsh
