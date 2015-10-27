@@ -1,0 +1,9 @@
+#!/bin/bash
+
+STATUS=$(vagrant status | grep -c running)
+if [ "$STATUS" = 0 ]; then
+	vagrant up
+fi
+
+vagrant ssh
+exit 0
