@@ -1,6 +1,7 @@
 # aliases
 alias ll='ls -al'
 alias df='df -h'
+alias resource='source ~/.zprofile'
 
 # screen
 alias s='screen'
