@@ -1,6 +1,5 @@
 #!/bin/bash
 
-SSH=$(vagrant ssh)
 if vagrant ssh ; then
 	exit 0
 else
