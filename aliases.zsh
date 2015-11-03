@@ -34,7 +34,7 @@ alias gd='g diff --color'
 alias gdc='gd --cached'
 
 # log
-alias glog='g log'
+alias glog='g log --abbrev-commit --relative-date'
 alias gmylog='glog --author="Daniel Walldorf"'
 
 # stash
