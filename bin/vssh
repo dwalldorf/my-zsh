@@ -1,8 +1,0 @@
-#!/bin/bash
-
-if vagrant ssh ; then
-	exit 0
-else
-	vagrant up && vagrant ssh
-fi
-exit 0

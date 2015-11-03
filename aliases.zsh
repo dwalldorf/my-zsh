@@ -1,7 +1,8 @@
-# aliases
+# common
 alias ll='ls -al'
 alias df='df -h'
 alias resource='source ~/.zprofile'
+alias vssh='vagrant up && vagrant ssh'
 
 # screen
 alias s='screen'
@@ -18,4 +19,8 @@ alias gl='git pull -p'
 alias gfm='git fetch && git merge origin/master'
 alias glp='git pull && git push'
 alias gs='git stash'
-alias gsa='git stash apply'
+alias gsr='gs && gfr && gsp'
+alias gsp='git stash pop'
+
+# RG
+alias devm='cd ~/Documents/projects/devm && vagrant up && vagrant ssh'
