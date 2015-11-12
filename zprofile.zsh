@@ -14,7 +14,7 @@ ZSH_THEME="apple"
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
-plugins=(osx git)
+plugins=(osx git catimg composer dirhistory encode64 sudo symfony2 vagrant)
 DISABLE_AUTO_TITLE="true"
 
 source $ZSH/oh-my-zsh.sh
