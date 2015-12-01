@@ -24,6 +24,9 @@ function tabTitle {
     echo -ne "\033]0;"$*"\007"
 }
 
+# docker
+eval "$(docker-machine env default)"
+
 # Keypad
 # 0 . Enter
 bindkey -s "^[Op" "0"
