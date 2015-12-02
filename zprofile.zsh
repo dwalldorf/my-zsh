@@ -26,6 +26,7 @@ function tabTitle {
 
 # docker
 eval "$(docker-machine env default)"
+eval "$(ssh-add)"
 
 # Keypad
 # 0 . Enter
