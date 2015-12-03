@@ -27,6 +27,7 @@ alias gp='g push'
 alias glp='gl && gp'
 alias gfm='gf && g merge origin/master'
 alias gr='g rebase'
+alias gsquash='git rebase -i origin/master'
 alias gcp='g cherry-pick'
 
 # diff
