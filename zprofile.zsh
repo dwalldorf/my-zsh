@@ -12,7 +12,6 @@ done
 unset file
 
 source $ZSH/oh-my-zsh.sh
-source ~/.my-zsh/aliases.zsh
 
 function tabTitle {
     echo -ne "\033]0;"$*"\007"
