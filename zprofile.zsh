@@ -6,12 +6,13 @@ ZSH=$HOME/.oh-my-zsh
 
 plugins=(osx git catimg composer dirhistory encode64 sudo symfony2 vagrant docker docker-compose)
 
-for file in ~/.my-zsh/{custom,bash_prompt,exports,aliases,functions}; do
+for file in ~/.my-zsh/{custom,bash_prompt,exports,functions}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
 
 source $ZSH/oh-my-zsh.sh
+source ~/.my-zsh/aliases.zsh
 
 function tabTitle {
     echo -ne "\033]0;"$*"\007"
