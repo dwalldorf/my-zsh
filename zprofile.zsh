@@ -3,16 +3,18 @@ ZSH=$HOME/.oh-my-zsh
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
-
 plugins=(osx git catimg composer dirhistory encode64 sudo symfony2 vagrant docker docker-compose)
 
-for file in ~/.my-zsh/{custom,bash_prompt,exports,functions}; do
+for file in ~/.my-zsh/{custom,exports,functions}; do
 	[ -r "$file" ] && source "$file"
 done
-unset file
 
 source $ZSH/oh-my-zsh.sh
 source ~/.my-zsh/aliases.zsh
+
+if [ -r ~/.my-zsh/aliases ]; then
+	source ~/.my-zsh/aliases
+fi
 
 function tabTitle {
     echo -ne "\033]0;"$*"\007"
