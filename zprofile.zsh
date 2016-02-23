@@ -1,5 +1,8 @@
+# path to my-zsh clone
+export MY_ZSH_HOME=~/.my-zsh
+
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+ZSH=$MY_ZSH_HOME/oh-my-zsh
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -10,15 +13,7 @@ for file in ~/.my-zsh/{custom,exports,functions}; do
 done
 
 source $ZSH/oh-my-zsh.sh
-source ~/.my-zsh/aliases.zsh
-
-if [ -r ~/.my-zsh/aliases ]; then
-	source ~/.my-zsh/aliases
-fi
-
-function tabTitle {
-    echo -ne "\033]0;"$*"\007"
-}
+source $MY_ZSH_HOME/aliases.zsh
 
 # Keypad
 # 0 . Enter
