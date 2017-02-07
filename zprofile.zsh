@@ -15,6 +15,8 @@ done
 source $ZSH/oh-my-zsh.sh
 source $MY_ZSH_HOME/aliases.zsh
 
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 # Keypad
 # 0 . Enter
 bindkey -s "^[Op" "0"
