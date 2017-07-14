@@ -45,5 +45,7 @@ alias gsr='gs && gfr && gsp'
 
 # Springer
 alias cm-pass='PASSWORD_STORE_DIR=~/Documents/projects/springer/cm-pass pass'
-alias springermvn='mv ~/.m2/settings.xml_bak ~/.m2/settings.xml'
-alias unspringermvn='mv ~/.m2/settings.xml ~/.m2/settings.xml_bak'
+alias springermvn='cp ~/.m2/settings_springer.xml ~/.m2/settings.xml'
+alias unspringermvn='cp ~/.m2/settings_default.xml ~/.m2/settings.xml'
+
+alias vpn-connect='sudo openconnect -u dwn0325 --authgroup=SpringerNature https://vpn.springer-sbm.com'
