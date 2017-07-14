@@ -44,6 +44,6 @@ alias gsp='gs pop'
 alias gsr='gs && gfr && gsp'
 
 # Springer
-alias cm-pass='PASSWORD_STORE_DIR=~/Documents/projects/springer/cm-pass pass'
+alias cm-pass='PASSWORD_STORE_DIR=~/.cm-pass pass'
 alias springermvn='mv ~/.m2/settings.xml_bak ~/.m2/settings.xml'
 alias unspringermvn='mv ~/.m2/settings.xml ~/.m2/settings.xml_bak'
