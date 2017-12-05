@@ -42,6 +42,3 @@ alias gmylog='glog --author="Daniel Walldorf"'
 alias gs='g stash'
 alias gsp='gs pop'
 alias gsr='gs && gfr && gsp'
-
-# RG
-alias devm='cd ~/Documents/projects/devm && vagrant up && vagrant ssh'
