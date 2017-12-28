@@ -19,6 +19,7 @@ alias sr='s -r'
 alias g='git'
 alias gco='g checkout'
 alias master='gco master'
+alias dev='gco development'
 
 # fetch / pull / push / rebase / ...
 alias gf='g fetch'
