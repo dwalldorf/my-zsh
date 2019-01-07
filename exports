@@ -1,10 +1,10 @@
-export GRADLE_HOME="/usr/bin/gradle/current"
-export M3_HOME="/opt/apache-maven-3.5.0/"
+export GRADLE_HOME="/opt/gradle/gradle-5.0/"
+export M3_HOME="$HOME/bin/maven-3.6.0"
 export M3=$M3_HOME/bin
 export M2_HOME=""
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
-export PATH=$HOME/bin:$MY_ZSH_HOME/bin:/usr/local/bin:$M3_HOME:$M3:$JAVA_HOME:$PATH:$GRADLE_HOME/bin:/usr/local/redis-3.2.5/src:/usr/local/protoc-3.1.0/bin
+export PATH=$HOME/bin:$MY_ZSH_HOME/bin:/usr/local/bin:$M3:$JAVA_HOME:$PATH:$GRADLE_HOME/bin:/usr/local/protoc-3.1.0/bin
 
 export EDITOR="vim"
 export MANPAGER="less -X" # Don’t clear the screen after quitting a manual page
