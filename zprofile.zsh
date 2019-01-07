@@ -3,6 +3,7 @@ export MY_ZSH_HOME=~/.my-zsh
 
 # Path to your oh-my-zsh configuration.
 ZSH=$MY_ZSH_HOME/oh-my-zsh
+ZSH_THEME=awesomepanda
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
