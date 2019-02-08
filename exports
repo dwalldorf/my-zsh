@@ -15,3 +15,8 @@ export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
 export CHEF_REPO="/Users/daniel/Documents/projects/springer/cm_chef_repo"
 export SCMS_DIR="/Users/daniel/Documents/projects/springer/cm-springer-cms"
+
+
+# fix cm-pass
+GPG_TTY=$(tty)
+export GPG_TTY
