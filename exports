@@ -1,8 +1,8 @@
 export GRADLE_HOME="/opt/gradle/gradle-5.0/"
-export M3_HOME="$HOME/bin/maven-3.6.0"
+export M3_HOME="$HOME/bin/maven-3.6.3"
 export M3=$M3_HOME/bin
 export M2_HOME=""
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA_HOME=`/usr/libexec/java_home -v 11`
 
 export PATH=$HOME/bin:$MY_ZSH_HOME/bin:/usr/local/bin:$M3:$JAVA_HOME:$PATH:$GRADLE_HOME/bin:/usr/local/protoc-3.1.0/bin
 
@@ -13,8 +13,8 @@ export LESS_TERMCAP_md="$ORANGE" # Highlight section titles in manual pages
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
-export CHEF_REPO="/Users/daniel/Documents/projects/springer/cm_chef_repo"
-export SCMS_DIR="/Users/daniel/Documents/projects/springer/cm-springer-cms"
+export CHEF_REPO="~/projects/springer/cm_chef_repo"
+export SCMS_DIR="~/Documents/projects/springer/cm-springer-cms"
 
 
 # fix cm-pass
