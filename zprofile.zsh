@@ -7,7 +7,7 @@ ZSH_THEME=awesomepanda
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
-plugins=(osx mvn git composer dirhistory encode64 sudo docker docker-compose)
+plugins=(osx composer dirhistory encode64 sudo)
 
 for file in ~/.my-zsh/{custom,exports,functions}; do
 	[ -r "$file" ] && source "$file"

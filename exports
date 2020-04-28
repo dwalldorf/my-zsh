@@ -1,6 +1,7 @@
 export GRADLE_HOME="/opt/gradle/gradle-5.0/"
 export M3_HOME="$HOME/bin/maven-3.6.3"
 export M3=$M3_HOME/bin
+export MAVEN_OPTS=-Xmx2048m
 export M2_HOME=""
 export JAVA_HOME=`/usr/libexec/java_home -v 11`
 
