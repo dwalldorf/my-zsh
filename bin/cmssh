@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then
+        echo "Error: No hostname specified"
+        exit 1
+fi
+
+ssh "${1}.cms.gcp.springernature.cloud"

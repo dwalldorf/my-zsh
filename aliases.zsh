@@ -48,3 +48,4 @@ alias gsr='gs && gfr && gsp'
 # Springer
 alias cm-pass='PASSWORD_STORE_DIR=~/.cm-pass pass'
 alias vpn-connect='sudo openconnect -u dwn0325 --authgroup=SpringerNature https://vpn.springer-sbm.com'
+

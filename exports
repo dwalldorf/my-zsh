@@ -1,8 +1,9 @@
 export GRADLE_HOME="/opt/gradle/gradle-5.0/"
-export M3_HOME="$HOME/bin/maven-3.6.0"
+export M3_HOME="$HOME/bin/maven-3.6.3"
 export M3=$M3_HOME/bin
+export MAVEN_OPTS=-Xmx2048m
 export M2_HOME=""
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA_HOME=`/usr/libexec/java_home -v 11`
 
 export PATH=$HOME/bin:$MY_ZSH_HOME/bin:/usr/local/bin:$M3:$JAVA_HOME:$PATH:$GRADLE_HOME/bin:/usr/local/protoc-3.1.0/bin
 
