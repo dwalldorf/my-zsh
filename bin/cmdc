@@ -1,0 +1,73 @@
+#!/bin/bash
+
+DB="mysql mongodb"
+CMS="content-management-server"
+MLS="master-live-server"
+RLS="replication-live-server"
+WFS="workflow-server"
+STUDIO="${WFS} ${CMS} solr studio-server studio-client"
+
+if [ -z ${CMDC_DIR+x} ]; then
+  echo "Error: CMDC_DIR must be set to the CoreMedia CC project directory."
+  exit 1
+fi
+
+if [ $# -eq 0 ]; then
+  echo "Error: No instruction provided."
+  echo "Usage: cmdc docker-compose instruction [service(s)]"
+  exit 1
+fi
+
+
+INSTR="${1}"
+LOG_VERBOSE=false
+shift
+
+
+SERVICES=""
+for arg in "$@"; do
+  case $arg in
+    cms)
+      SERVICES="${SERVICES} ${CMS}"
+      ;;
+    mls)
+      SERVICES="${SERVICES} ${MLS}"
+      ;;
+    rls)
+      SERVICES="${SERVICES} ${RLS}"
+      ;;
+    studio)
+      SERVICES="${SERVICES} ${STUDIO}"
+      ;;
+
+    cae-dev)
+      SERVICES="${SERVICES} ${CMS} ${MLS} ${RLS}"
+      ;;
+
+    -v)
+      LOG_VERBOSE=true
+      ;;
+
+    *)
+      SERVICES="${SERVICES} $arg"
+      ;;
+  esac
+done
+
+
+if [ "${INSTR}" == up ]; then
+  INSTR="up -d"
+  SERVICES="${DB} ${SERVICES}"
+elif [ "${INSTR}" == lf ]; then
+  INSTR="logs -f"
+fi
+
+
+if [ "${LOG_VERBOSE}" == true ]; then
+  echo "INFO: Working directory: ${CMDC_DIR}"
+  echo "INFO: Command: docker-compose ${INSTR} ${SERVICES}"
+  echo
+fi
+
+cd $CMDC_DIR
+docker-compose $INSTR $SERVICES
