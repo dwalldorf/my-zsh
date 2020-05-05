@@ -9,12 +9,9 @@ ZSH_THEME=awesomepanda
 # DISABLE_AUTO_TITLE="true"
 plugins=(osx composer dirhistory encode64 sudo)
 
-for file in ~/.my-zsh/{custom,exports,functions}; do
-	[ -r "$file" ] && source "$file"
-done
-
 source $ZSH/oh-my-zsh.sh
-source $MY_ZSH_HOME/aliases.zsh
+source $MY_ZSH_HOME/exports.sh
+source $MY_ZSH_HOME/aliases.sh
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
