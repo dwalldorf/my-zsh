@@ -18,6 +18,7 @@ alias sr='s -r'
 #########
 alias g='git'
 alias gco='g checkout'
+alias gst='git status'
 alias master='gco master'
 alias dev='gco development'
 
